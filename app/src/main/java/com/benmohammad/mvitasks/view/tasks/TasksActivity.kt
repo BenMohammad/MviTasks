@@ -61,7 +61,7 @@ class TasksActivity: AppCompatActivity(),
             setStatusBarBackground(R.color.purple_700)
         }
 
-        supportFragmentManager.findFragmentById(R.id.contentFrame) as TasksFragment
+        supportFragmentManager.findFragmentById(R.id.contentFrame) as TasksFragment?
                 ?: TasksFragment().also {
                     replaceFragmentInActivity(it, R.id.contentFrame)
                 }
